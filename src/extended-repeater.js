@@ -6,7 +6,7 @@ module.exports = function repeater(str,opt) {
  console.log(opt);
   let options = opt;
   let st="";
-  if(!("repeatTimes" in options) options["repeatTimes"]=0;
+  if(!("repeatTimes" in options) options.repeatTimes=0;
      if(!("separator" in options) options["separator"]="";
   if(!("addition" in options) options["addition"]="";
      if(!("additionRepeatTimes" in options) options["additionRepeatTimes"]=0;
