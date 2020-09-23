@@ -1,8 +1,8 @@
 const CustomError = require("../extensions/custom-error");
 
 module.exports = function repeater(str,opt) {
- // throw new CustomError('Not implemented');
- if(!opt) return str;
+ throw new CustomError('Not implemented');
+ /*if(!opt) return str;
  console.log(opt);
   let options = opt;
   let st="";
@@ -17,6 +17,6 @@ module.exports = function repeater(str,opt) {
       st+=options.additionSeparator+options.addition;
     st+=options.separator;
   }
-     return st;
+     return st;*/
 };
   
