@@ -10,5 +10,5 @@ module.exports = function countCats(number) {
   
   return count;*/
   
-  return number.filter(a=>a.filter(b=>b==='^^')).length; 
+  return number.filter(a=>a.filter(b=>b==='^^')===['^^']).length; 
 };
