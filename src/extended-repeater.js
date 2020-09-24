@@ -21,7 +21,7 @@ module.exports = function repeater(str,opt) {
  
      for(let i=0; i<opt['repeatTimes']; i++)
     st=st+pt.separator+st;
-  }
+  
      return st;
 };
   
