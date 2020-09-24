@@ -12,11 +12,11 @@ console.log(str,opt.separator)
   let st=str;
  let stfn="";
   if(!('repeatTimes' in opt)) opt['repeatTimes']=0;
-     if(!("separator" in opt)) opt["separator"]="";
+     if(!("separator" in opt)) opt["separator"]="+";
  else if(typeof opt["separator"]==="undefined") opt["separator"]="+";
   if(!("addition" in opt)) opt["addition"]="";
      if(!("additionRepeatTimes" in opt)) opt["additionRepeatTimes"]=0;
-  if(!("additionSeparator" in opt)) opt["additionSeparator"]="";
+  if(!("additionSeparator" in opt)) opt["additionSeparator"]="|";
      
  
  st+=opt.addition;
