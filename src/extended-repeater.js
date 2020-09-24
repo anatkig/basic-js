@@ -9,7 +9,7 @@ module.exports = function repeater(str,opt) {
 
 console.log(str,opt.separator)
 
-  let st=str;
+  let st=str.toString();
  let stfn="";
   if(!('repeatTimes' in opt)) opt['repeatTimes']=0;
      if(!("separator" in opt)) opt["separator"]="+";
