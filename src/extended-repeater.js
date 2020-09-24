@@ -16,9 +16,9 @@ console.log(opt)
      if(!("additionRepeatTimes" in opt)) opt["additionRepeatTimes"]=0;
   if(!("additionSeparator" in opt)) opt["additionSeparator"]="";
      
- for(let y=0; y<opt.additionRepeatTimes;y++)
+ for(let y=0; y<opt.additionRepeatTimes;y++){
       st+=opt.additionSeparator+opt.addition;
- 
+ }
      for(let i=0; i<opt['repeatTimes']; i++)
     st=st+opt.separator+st;
   
