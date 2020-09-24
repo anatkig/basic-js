@@ -14,7 +14,7 @@ console.log(str,opt.separator)
   if(!('repeatTimes' in opt)) opt['repeatTimes']=0;
      if(!("separator" in opt)) opt["separator"]="+";
  else if(typeof opt["separator"]==="undefined") opt["separator"]="+";
-  if(opt.hasOwnProperty("addition") opt["addition"]="";
+  if(opt.hasOwnProperty("addition")) opt["addition"]="";
      if(!("additionRepeatTimes" in opt)) opt["additionRepeatTimes"]=0;
   if(opt.hasOwnProperty("additionSeparator")) opt["additionSeparator"]="|";
      
