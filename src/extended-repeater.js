@@ -9,7 +9,7 @@ module.exports = function repeater(str,opt) {
 
 console.log(str,opt.separator)
 
-  let st=str;
+  let st=new String(str);
  if(typeof st==="boolean")st=st.toString();
  
  let stfn="";
