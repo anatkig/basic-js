@@ -1,7 +1,11 @@
 const CustomError = require("../extensions/custom-error");
 
 module.exports = function repeater(str,opt) {
- throw new CustomError('Not implemented');
+ 
+ 
+ console.log(opt);
+ 
+// throw new CustomError('Not implemented');
  /*if(!opt) return str;
  console.log(opt);
   let options = opt;
