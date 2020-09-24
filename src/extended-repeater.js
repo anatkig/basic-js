@@ -7,7 +7,7 @@ module.exports = function repeater(str,opt) {
  
 // throw new CustomError('Not implemented');
 
-console.log(opt)
+console.log(str,opt)
 
   let st=str;
  let stfn="";
