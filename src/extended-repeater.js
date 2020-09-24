@@ -22,7 +22,7 @@ console.log(opt)
  }
  stfn=st;
      for(let i=0; i<opt['repeatTimes']; i++)
-    stfn+=opt.separator+st;
+    stfn=stfn+opt.separator+st;
   
      return st;
 };
