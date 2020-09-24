@@ -9,7 +9,7 @@ module.exports = function repeater(str,opt) {
 
 
 
-  let st="";
+  let st=str;
   if(!('repeatTimes' in opt)) opt['repeatTimes']=0;
      if(!("separator" in opt)) opt["separator"]="";
   if(!("addition" in opt)) opt["addition"]="";
