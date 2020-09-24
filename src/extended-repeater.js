@@ -20,7 +20,7 @@ module.exports = function repeater(str,opt) {
       st+=opt.additionSeparator+opt.addition;
  
      for(let i=0; i<opt['repeatTimes']; i++)
-    st=st+pt.separator+st;
+    st=st+opt.separator+st;
   
      return st;
 };
