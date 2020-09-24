@@ -21,7 +21,7 @@ console.log(opt)
       st+=opt.additionSeparator+opt.addition;
  }
  stfn=st;
-     for(let i=0; i<opt['repeatTimes']; i++)
+     for(let i=0; i<opt['repeatTimes']-1; i++)
     stfn=stfn+opt.separator+st;
   
      return stfn;
