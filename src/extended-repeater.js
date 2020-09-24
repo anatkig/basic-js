@@ -20,7 +20,7 @@ console.log(opt)
       st+=opt.additionSeparator+opt.addition;
  }
      for(let i=0; i<opt['repeatTimes']; i++)
-    st=st+opt.separator+st;
+    st=opt.separator+st;
   
      return st;
 };
