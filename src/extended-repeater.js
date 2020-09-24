@@ -3,7 +3,7 @@ const CustomError = require("../extensions/custom-error");
 module.exports = function repeater(str,opt) {
  
 
- console.log(repeatTimes);
+ console.log(opt['repeatTimes']);
  
 // throw new CustomError('Not implemented');
  /*
