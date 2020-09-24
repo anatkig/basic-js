@@ -24,6 +24,6 @@ console.log(opt)
      for(let i=0; i<opt['repeatTimes']; i++)
     stfn=stfn+opt.separator+st;
   
-     return st;
+     return stfn;
 };
   
