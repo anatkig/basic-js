@@ -7,7 +7,7 @@ module.exports = function repeater(str,opt) {
  
 // throw new CustomError('Not implemented');
 
-
+console.log(opt)
 
   let st=str;
   if(!('repeatTimes' in opt)) opt['repeatTimes']=0;
