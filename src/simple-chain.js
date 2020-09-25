@@ -3,6 +3,7 @@ const CustomError = require("../extensions/custom-error");
 const chainMaker = {
   
   console.log(this);
+  
   getLength() {
    // throw new CustomError('Not implemented');
     return this.length;
