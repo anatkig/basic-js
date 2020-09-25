@@ -4,7 +4,7 @@ module.exports = class DepthCalculator {
   calculateDepth(arr) {
     //throw new CustomError('Not implemented');
    
-    if(!Array.isArray(arr))return 0;
+    if(!Array.isArray(arr))return 1;
     
     else return this.calculateDepth(arr.filter(a=>Array.isArray(a))[0])+1;
   }
