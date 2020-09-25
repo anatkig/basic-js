@@ -27,7 +27,10 @@ chain: "",
   },
   finishChain() {
     //throw new CustomError('Not implemented');
-    return this.chain;
+    
+    let ch=this.chain;
+    this.chain="";
+    return ch;
   }
 };
 
