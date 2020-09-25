@@ -10,9 +10,10 @@ chain: "",
    // throw new CustomError('Not implemented');
     return this.chain.length; 
   },
-  addLink() {
-     console.log(this);
-  
+  addLink(value) {
+    this.chain+=value;
+     console.log(this,value);
+  if(!value)
    this.chain+="( )";
     
   },
