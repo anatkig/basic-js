@@ -2,9 +2,10 @@ const CustomError = require("../extensions/custom-error");
 
 const chainMaker = {
   
-  console.log(this);
-  
+ 
   getLength() {
+     console.log(this);
+  
    // throw new CustomError('Not implemented');
     return this.length;
   },
