@@ -10,6 +10,8 @@ const chainMaker = {
     return this.length;
   },
   addLink(value) {
+     console.log(this);
+  
    return "( )"
     
   },
