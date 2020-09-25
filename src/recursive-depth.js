@@ -6,6 +6,6 @@ module.exports = class DepthCalculator {
    
     if(!Array.isArray(arr))return 0;
     
-    else return ()=>{return 1+ calculateDepth(arr.filter(a=>Array.isArray(a)))}
+    else return calculateDepth(arr.filter(a=>Array.isArray(a))[0])+1;
   }
 };
