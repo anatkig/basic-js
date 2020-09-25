@@ -2,7 +2,7 @@ const CustomError = require("../extensions/custom-error");
 
 const chainMaker = {
   
-chain:"",
+chain: "",
  
   getLength() {
      console.log(this);
@@ -10,7 +10,7 @@ chain:"",
    // throw new CustomError('Not implemented');
     return this.chain.length; 
   },
-  addLink(value) {
+  addLink() {
      console.log(this);
   
    this.chain+="( )";
