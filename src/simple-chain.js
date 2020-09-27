@@ -7,7 +7,7 @@ const CustomError = require("../extensions/custom-error");
 chain: "",
  arval: [],
   getLength() {
-     console.log(this);
+   
   
    // throw new CustomError('Not implemented');
     return this.chain.length; 
@@ -15,7 +15,7 @@ chain: "",
   addLink(value) {
     this.chain+=value;
     this.arval.push(value);
-     console.log(this,value,chainMaker);
+     
   if(!value){
    this.chain+="( )";
     this.arval.push("( )");
@@ -25,7 +25,7 @@ chain: "",
   removeLink(position) {
     //throw new CustomError('Not implemented');
    this.chain=this.chain.replace(this.arval[position],"");
-        console.log(this);
+     
         return this;
   },
   reverseChain() {
