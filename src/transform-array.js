@@ -19,7 +19,7 @@ module.exports = function transform(arr) {
    if(arr2[i]==="--double-prev"){ arr2.splice(i-1,0,arr2[i-1]); return arr2.filter(a=>Number.isInteger(a))}
   
  }
-  }
+  
   
   
 };
