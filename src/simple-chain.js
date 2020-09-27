@@ -28,7 +28,7 @@ const CustomError = require("../extensions/custom-error");
     throw new CustomError('ditch');
         }
         else
- this.arval.splice(position-1,1);
+ this.arval.splice(parseInt(position)-1,1);
      
         return this;
   },
