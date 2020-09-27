@@ -17,13 +17,13 @@ const CustomError = require("../extensions/custom-error");
        // if(this.arval[this.arval.length-1]==="( )")this.arval[this.arval.length-1]=value;
        // else
         
-        if(value==null){
+        if(value==null)
       this.arval.push("(null)");
               else
     this.arval.push(value);
      
            //this.arval[this.arval.length-1]=null;
-     }
+     
  // if(!value){
    
   //  this.arval.push("( )");
