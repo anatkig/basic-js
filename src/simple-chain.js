@@ -24,8 +24,8 @@ chain: "",
    this.chain=this.chain.replace(arval[position],"");
   },
   reverseChain() {
-    throw new CustomError('Not implemented');
-    // remove line with error and write your code here
+    //throw new CustomError('Not implemented');
+    this.chain=this.chain.split('').reverse().join("");
   },
   finishChain() {
     //throw new CustomError('Not implemented');
