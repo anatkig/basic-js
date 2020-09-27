@@ -24,13 +24,14 @@ chain: "",
   },
   removeLink(position) {
     //throw new CustomError('Not implemented');
-   this.chain=this.chain.replace(arval[position],"");
+   this.chain=this.chain.replace(this.arval[position],"");
         console.log(this);
         return this;
   },
   reverseChain() {
     //throw new CustomError('Not implemented');
-    this.chain=this.chain.split('').reverse().join("");
+        this.arval.reverse();
+    this.chain=this.arval.join("");
         return this;
   },
   finishChain() {
