@@ -12,7 +12,8 @@ module.exports = function getSeason(date) {
     case 11: return 'winter';
     case m>7: return 'fall';
     case m>4: return 'summer';
-    case m>1: return 'winter';
+    case m>1: return 'spring';
+    default: return 'winter';
   
   
   
