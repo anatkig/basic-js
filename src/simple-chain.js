@@ -13,7 +13,7 @@ const CustomError = require("../extensions/custom-error");
     return this.arval.length; 
   },
   addLink(value) {
- console.log(value);
+
       
         
         if(value==null)
@@ -26,7 +26,7 @@ const CustomError = require("../extensions/custom-error");
         return this;
   },
   removeLink(position) {
-        console.log(position+"pos");
+    
         if(!Number.isInteger(parseInt(position))||position>=this.arval.length||position<0){
               this.arval.splice(0,this.arval.length);
     throw new CustomError('ditch');
@@ -47,7 +47,7 @@ const CustomError = require("../extensions/custom-error");
     
   let chain=this.arval.join("~~");
         this.arval.splice(0,this.arval.length);
-        console.log(this.arval);
+       
   
     return chain;
   }
