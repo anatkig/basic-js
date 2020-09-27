@@ -18,8 +18,8 @@ const CustomError = require("../extensions/custom-error");
        // else
     this.arval.push(value);
      if(value==null){
-      this.arval.push(0);
-           this.arval[this.arval.length-1]=null;
+      this.arval.push("(null)");
+           //this.arval[this.arval.length-1]=null;
      }
  // if(!value){
    
