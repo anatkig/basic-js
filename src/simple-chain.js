@@ -14,8 +14,8 @@ const CustomError = require("../extensions/custom-error");
   },
   addLink(value) {
  console.log(value);
-        if(this.arval[this.arval.length-1]==="( )")this.arval[this.arval.length-1]=value;
-        else
+       // if(this.arval[this.arval.length-1]==="( )")this.arval[this.arval.length-1]=value;
+       // else
     this.arval.push(value);
      
  // if(!value){
