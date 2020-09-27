@@ -18,9 +18,9 @@ const CustomError = require("../extensions/custom-error");
         else
     this.arval.push(value);
      
-  if(!value){
+ // if(!value){
    
-    this.arval.push("( )");
+  //  this.arval.push("( )");
   }
         return this;
   },
