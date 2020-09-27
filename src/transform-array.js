@@ -14,7 +14,7 @@ module.exports = function transform(arr) {
   let arr2=new Array(arr);
 console.log(arr2)
  for(let i=0;i<arr2.length;i++){
-   if(Array.isArray(arr2[i]))arr2[i]=this.transform(arr);
+   if(Array.isArray(arr2[i]))arr2[i]=transform(arr2);
    else
    if(arr2[i]==="--discard-next"){ arr2.splice(i,2) };
    if(arr2[i]==="--discard-prev"){ arr2.splice(i-1,2)};
