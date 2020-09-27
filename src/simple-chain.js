@@ -13,7 +13,7 @@ const CustomError = require("../extensions/custom-error");
     return this.arval.length; 
   },
   addLink(value) {
- 
+ console.log(value);
     this.arval.push(value);
      
   if(!value){
@@ -23,7 +23,10 @@ const CustomError = require("../extensions/custom-error");
         return this;
   },
   removeLink(position) {
-    //throw new CustomError('Not implemented');
+        if(!Number.isInteger(position))
+    throw new CustomError('ditch');
+        
+        else
  this.arval.splice(position,1);
      
         return this;
