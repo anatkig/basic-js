@@ -10,9 +10,13 @@ module.exports = function getSeason(date) {
   console.log(m)
   switch(m){
     case 11: return 'winter';
+      break;
     case m>7: return 'fall';
+      break;
     case m>4: return 'summer';
+      break;
     case m>1: return 'spring';
+      break;
     default: return 'winter';
   
   
