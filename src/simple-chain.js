@@ -25,6 +25,7 @@ chain: "",
   removeLink(position) {
     //throw new CustomError('Not implemented');
    this.chain=this.chain.replace(arval[position],"");
+        console.log(this);
         return this;
   },
   reverseChain() {
