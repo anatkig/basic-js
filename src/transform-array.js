@@ -15,12 +15,12 @@ module.exports = function transform(arr) {
 console.log(arr2)
  for(let i=0;i<arr2.length;i++){
    if(Array.isArray(arr2[i]))arr2[i]=transform(arr2[i]);
-   else
+   else{
    if(arr2[i]==="--discard-next"){ arr2.splice(i,2) };
    if(arr2[i]==="--discard-prev"){ arr2.splice(i-1,2)};
    if(arr2[i]==="--double-next"){ arr2.splice(i,1,arr2[i+1])};
    if(arr2[i]==="--double-prev"){ arr2.splice(i,1,arr2[i-1])};
-  
+   }
  }
   return arr2;
   
