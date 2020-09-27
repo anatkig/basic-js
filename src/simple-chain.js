@@ -14,20 +14,15 @@ const CustomError = require("../extensions/custom-error");
   },
   addLink(value) {
  console.log(value);
-       // if(this.arval[this.arval.length-1]==="( )")this.arval[this.arval.length-1]=value;
-       // else
+      
         
         if(value==null)
-      this.arval.push("(null)");
+      this.arval.push("( null )");
               else
     this.arval.push(value);
      
-           //this.arval[this.arval.length-1]=null;
-     
- // if(!value){
-   
-  //  this.arval.push("( )");
- // }
+          
+
         return this;
   },
   removeLink(position) {
@@ -50,7 +45,7 @@ const CustomError = require("../extensions/custom-error");
   finishChain() {
     //throw new CustomError('Not implemented');
     
-  let chain=this.arval.join("~~");
+  let chain=this.arval.join(")~~(");
         this.arval.splice(0,this.arval.length);
         console.log(this.arval);
   
