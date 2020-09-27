@@ -40,9 +40,10 @@ const CustomError = require("../extensions/custom-error");
   finishChain() {
     //throw new CustomError('Not implemented');
     
+  let chain=this.arval.join("~~");
+        this.arval=[];
   
-  
-    return this.arval.join("~~")
+    return chain;
   }
 };
 
