@@ -1,8 +1,8 @@
 const CustomError = require("../extensions/custom-error");
 
-let chainMaker = new Object();
+
       
-  chainMaker =  {
+ const chainMaker =  {
   
 chain: "",
  arval: [],
