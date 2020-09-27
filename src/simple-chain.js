@@ -21,7 +21,7 @@ const CustomError = require("../extensions/custom-error");
  // if(!value){
    
   //  this.arval.push("( )");
-  }
+ // }
         return this;
   },
   removeLink(position) {
