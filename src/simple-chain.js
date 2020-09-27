@@ -20,6 +20,7 @@ chain: "",
    this.chain+="( )";
     this.arval.push("( )");
   }
+        return chainMaker;
   },
   removeLink(position) {
     //throw new CustomError('Not implemented');
