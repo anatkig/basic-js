@@ -23,7 +23,7 @@ const CustomError = require("../extensions/custom-error");
         return this;
   },
   removeLink(position) {
-        if(!Number.isInteger(position))
+        if(!Number.isInteger(parseInt(position)))
     throw new CustomError('ditch');
         
         else
