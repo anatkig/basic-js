@@ -20,15 +20,17 @@ chain: "",
    this.chain+="( )";
     this.arval.push("( )");
   }
-        return chainMaker;
+        return this;
   },
   removeLink(position) {
     //throw new CustomError('Not implemented');
    this.chain=this.chain.replace(arval[position],"");
+        return this;
   },
   reverseChain() {
     //throw new CustomError('Not implemented');
     this.chain=this.chain.split('').reverse().join("");
+        return this;
   },
   finishChain() {
     //throw new CustomError('Not implemented');
