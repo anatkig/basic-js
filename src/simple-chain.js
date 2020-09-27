@@ -14,8 +14,8 @@ const CustomError = require("../extensions/custom-error");
   },
   addLink(value) {
  console.log(value);
-        if(this.arval[this.arval.length-1]==="( )")this.arval[this.arval.length-1]=value;
-        else
+        //if(this.arval[this.arval.length-1]==="( )")this.arval[this.arval.length-1]=value;
+        //else
     this.arval.push(value);
      
   if(!value){
@@ -25,6 +25,7 @@ const CustomError = require("../extensions/custom-error");
         return this;
   },
   removeLink(position) {
+        console.log(position);
         if(!Number.isInteger(parseInt(position))||position>=this.arval.length||position<0){
               this.arval.splice(0,this.arval.length);
     throw new CustomError('ditch');
