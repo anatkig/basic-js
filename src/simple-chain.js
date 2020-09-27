@@ -15,7 +15,7 @@ chain: "",
   addLink(value) {
     this.chain+=value;
     this.arval.push(value);
-     console.log(this,value);
+     console.log(this,value,chainMaker);
   if(!value){
    this.chain+="( )";
     this.arval.push("( )");
