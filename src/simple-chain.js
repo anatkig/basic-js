@@ -42,6 +42,7 @@ const CustomError = require("../extensions/custom-error");
     
   let chain=this.arval.join("~~");
         this.arval.splice(0,this.arval.length);
+        console.log(this.arval);
   
     return chain;
   }
