@@ -7,7 +7,7 @@ module.exports = function getSeason(date) {
   
   if(!date) return 'Unable to determine the time of year!';
   let m=date.getMonth();
-  
+  console.log(m)
   switch(m){
     case 11: return 'winter';
     case m>7: return 'fall';
