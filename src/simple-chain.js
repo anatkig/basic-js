@@ -41,7 +41,7 @@ const CustomError = require("../extensions/custom-error");
     //throw new CustomError('Not implemented');
     
   let chain=this.arval.join("~~");
-        this.arval=[];
+        this.arval.length=0;
   
     return chain;
   }
