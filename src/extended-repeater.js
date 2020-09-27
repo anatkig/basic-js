@@ -7,7 +7,7 @@ module.exports = function repeater(str,opt) {
  
 // throw new CustomError('Not implemented');
 
-console.log(str,opt.separator)
+
 
   let st=new String(str);
  if(typeof st==="boolean")st=st.toString();
