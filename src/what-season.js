@@ -2,7 +2,7 @@ const CustomError = require("../extensions/custom-error");
 
 module.exports = function getSeason(date) {
   
-  if(typeof date!=='object') 
+  if(typeof date!=='object'||date==null) 
   throw new CustomError('trash');
   
   if(!date) return 'Unable to determine the time of year!';
