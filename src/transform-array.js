@@ -1,7 +1,7 @@
 const CustomError = require("../extensions/custom-error");
 
 module.exports = function transform(arr) {
- 
+ console.log(arr)
   if(!Array.isArray(arr))
   throw new CustomError('trash');
   
