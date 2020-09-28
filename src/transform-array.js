@@ -34,7 +34,7 @@ module.exports = function transform(arr) {
    }
  
    }
-  return arr2//.filter(a=>a!==discn&&a!==discp&&a!==doubn&&a!==doubp);
+  return arr2.filter(a=>a!==discn&&a!==discp&&a!==doubn&&a!==doubp);
   
   
 };
