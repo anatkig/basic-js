@@ -1,6 +1,7 @@
 const CustomError = require("../extensions/custom-error");
 
 module.exports = function transform(arr) {
+  console.log(Array.isArray(arr)+"prov")
   if(!Array.isArray(arr))
   throw new CustomError('trash');
   
