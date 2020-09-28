@@ -12,7 +12,7 @@ module.exports = function transform(arr) {
   let com=arr.filter(a=>typeof a==="string");
   if(arr.length===0)return arr;
   let arr2=new Array(arr);
-console.log(arr2)
+
  for(let i=0;i<arr2.length;i++){
    if(Array.isArray(arr2[i]))arr2[i]=transform(arr2[i]);
    else{
