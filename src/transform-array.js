@@ -1,7 +1,7 @@
 const CustomError = require("../extensions/custom-error");
 
 module.exports = function transform(arr) {
- console.log(arr)
+
   if(!Array.isArray(arr))
   throw new CustomError('trash');
   
@@ -27,7 +27,7 @@ module.exports = function transform(arr) {
       }
    }
    else{
-   if(arr2[i]==="--discard-next"){ arr2.splice(i,2) }
+   if(arr2[i]==="--discard-next"){ arr2.splice(i,2); console.log(arr2[i]) }
    else if(arr2[i]==="--discard-prev"){if(i-1===-1)arr2.splice(i,1);  else arr2.splice(i-1,2)}
    else if(arr2[i]==="--double-next"){ if(i+1===arr2.length) arr2.splice(i,1); else arr2.splice(i,1,arr2[i+1])}
    else if(arr2[i]==="--double-prev"){if(i-1===-1)arr2.splice(i,1);  else arr2.splice(i,1,arr2[i-1])}
