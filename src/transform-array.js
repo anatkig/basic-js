@@ -27,7 +27,7 @@ module.exports = function transform(arr) {
    else return arr2;
       }  
     
-   }
+   
    else{
    if(arr2[i]==="--discard-next"){ arr2.splice(i,2) }
    else if(arr2[i]==="--discard-prev"){if(i-1===-1)arr2.splice(i,1);  else arr2.splice(i-1,2)}
