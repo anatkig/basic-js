@@ -14,9 +14,9 @@ module.exports = function transform(arr) {
   if(arr.length===0)return arr;
   let arr2=new Array(arr);
 
- for(let i=0;i<arr2.length;i++){
+ for(let i=0;i<arr2.length;i++)
   
-   if(Array.isArray(arr2[i]))
+   if(Array.isArray(arr2[i])){
       
       for(let y=0;y<arr2[i].length;y++){
        
@@ -26,6 +26,8 @@ module.exports = function transform(arr) {
    else if(arr2[i][y]==="--double-prev"){if(y-1===-1)arr2[i].splice(y,1);  else arr2[i].splice(y,1,arr2[y-1])};
    
       }  
+    
+   }
    else{
    if(arr2[i]==="--discard-next"){ arr2.splice(i,2) };
    else if(arr2[i]==="--discard-prev"){if(i-1===-1)arr2.splice(i,1);  else arr2.splice(i-1,2)};
