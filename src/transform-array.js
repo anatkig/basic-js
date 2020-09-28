@@ -12,7 +12,7 @@ module.exports = function transform(arr) {
   
 
   if(arr.length===0)return arr;
-  let arr2=new Array(arr);
+  let arr2=arr.slice(0);
 
  for(let i=0;i<arr2.length;i++){
   
