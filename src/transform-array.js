@@ -16,7 +16,7 @@ module.exports = function transform(arr) {
 
  for(let i=0;i<arr2.length;i++){
    if(Array.isArray(arr2[i]))
-      console.log(Array.isArrayarr2[i]))+"prov")
+      console.log(Array.isArray(arr2[i]))+"prov")
       for(let y=0;i<arr2[i].length;i++){
         
      if(arr2[i][y]==="--discard-next"){ arr2[i].splice(i,2) };
