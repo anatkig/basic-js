@@ -11,7 +11,7 @@ class VigenereCipheringMachine {
     let arr2=[];
     for(let i=0;i<arr.length;i++){
     
-    let count trash=0;
+    let count=0;
       if(!arr[i].toLowerCase()!==arr[i].toUpperCase())
         count++;
       else {
