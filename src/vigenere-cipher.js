@@ -19,7 +19,7 @@ class VigenereCipheringMachine {
          console.log(arr[i]);
       let diff=arr[i].charCodeAt(0)-97;
         let keyc=keyl.charCodeAt((i-count)%keyl.length);
-        console.log(count,i, keyc+diff);
+        console.log(((keyc+diff)%122));
         let newlet=String.fromCharCode(((keyc+diff)%122)<122?(keyc+diff)%122:((keyc+diff)%122)+97);
       arr[i]=newlet;
       console.log(newlet)
