@@ -22,7 +22,7 @@ class VigenereCipheringMachine {
         console.log(count,i);
         let newlet=String.fromCharCode(((keyc+diff)%122)<122?(keyc+diff)%122:((keyc+diff)%122)+97);
       arr[i]=newlet;
-      
+      console.log(newlet)
       }
     
     }
