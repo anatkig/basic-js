@@ -9,6 +9,7 @@ class VigenereCipheringMachine {
     let arr=string.toLowerCase().split("");
     let keyl=key.toLowerCase();
     let arr2=[];
+    console.log(arr);
     for(let i=0;i<arr.length;i++){
     
     let count=0;
@@ -21,7 +22,7 @@ class VigenereCipheringMachine {
         
         let newlet=String.fromCharCode(keyc+diff);
       arr[i]=newlet;
-      console.log(newlet);
+      
       }
     
     }
