@@ -5,7 +5,7 @@ class VigenereCipheringMachine {
   constructor (bul){
   
 if(typeof bul==="undefined"||bul)
-this.bul=bul;
+this.bul=true;
 else this.bul=false;
 }
   encrypt(string,key) {
