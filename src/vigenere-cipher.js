@@ -7,6 +7,8 @@ class VigenereCipheringMachine {
     
     let lengthnospace=string.split("").filter(a=>a.toUpperCase()!==a.toLowerCase()).length;
     let arr=string.toLowerCase().split("");
+    let keyl=key.toLowerCase();
+    
     return
    
   }    
@@ -16,6 +18,7 @@ class VigenereCipheringMachine {
     
     let lengthnospace=string.split("").filter(a=>a.toUpperCase()!==a.toLowerCase()).length;
     let arr=string.toLowerCase().split("");
+      let keyl=key.toLowerCase();
   }
 }
 
