@@ -54,7 +54,7 @@ class VigenereCipheringMachine {
      
        let middiff=diff-keyc;
        
-        let index=middiff+97;
+        let index=middiff+96;
            console.log(index);
         let newlet=String.fromCharCode(index);
       arr[i]=newlet;
