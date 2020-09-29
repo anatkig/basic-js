@@ -9,9 +9,9 @@ class VigenereCipheringMachine {
     let arr=string.toLowerCase().split("");
     let keyl=key.toLowerCase();
     let arr2=[];
-    console.log(arr);
+   
     for(let i=0;i<arr.length;i++){
-    
+     console.log(arr[i]);
     let count=0;
       if(!arr[i].toLowerCase()!==arr[i].toUpperCase())
         count++;
