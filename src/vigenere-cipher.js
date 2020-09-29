@@ -21,7 +21,7 @@ class VigenereCipheringMachine {
         
         let newlet=String.fromCharCode(keyc+diff);
       arr[i]=newlet;
-      
+      console.log(newlet);
       }
     
     }
