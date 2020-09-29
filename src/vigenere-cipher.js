@@ -3,16 +3,21 @@ const CustomError = require("../extensions/custom-error");
 class VigenereCipheringMachine {
   
   constructor (bul){
-
+  
+if(typeof bul==="undefined"||bul)
 this.bul=bul;
-
+else this.bul=false;
 }
   encrypt(string,key) {
     if(!string||!key)
     throw new CustomError('trash');
     
-   
-    let arr=string.toLowerCase().split("");
+    let arr=[];
+   if(this.bul===true)
+    arr=string.toLowerCase().split("");
+    else arr=string.toLowerCase().split("").reverse();
+    
+    
     let keyl=key.toLowerCase();
  
        let count=0;
@@ -42,8 +47,11 @@ this.bul=bul;
     if(!string||!key)
     throw new CustomError('trash');
     
-
-    let arr=string.toLowerCase().split("");
+    let arr=[];
+   if(this.bul===true)
+    arr=string.toLowerCase().split("");
+    else arr=string.toLowerCase().split("").reverse();
+  
       let keyl=key.toLowerCase();
        let count=0;
     
