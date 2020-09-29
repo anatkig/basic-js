@@ -13,7 +13,7 @@ class VigenereCipheringMachine {
     for(let i=0;i<arr.length;i++){
   
     let count=0;
-      if(!arr[i].toLowerCase()!==arr[i].toUpperCase())
+      if(arr[i].toLowerCase()!==arr[i].toUpperCase())
         count++;
       else {
          console.log(arr[i]);
