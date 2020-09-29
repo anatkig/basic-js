@@ -6,7 +6,7 @@ class VigenereCipheringMachine {
     throw new CustomError('trash');
     
     let lengthnospace=string.split("").filter(a=>a.toUpperCase()!==a.toLowerCase()).length;
-    let arr=string.split("");
+    let arr=string.toLowerCase().split("");
     return
    
   }    
@@ -15,7 +15,7 @@ class VigenereCipheringMachine {
     throw new CustomError('trash');
     
     let lengthnospace=string.split("").filter(a=>a.toUpperCase()!==a.toLowerCase()).length;
-    let arr=string.split("");
+    let arr=string.toLowerCase().split("");
   }
 }
 
