@@ -9,10 +9,10 @@ class VigenereCipheringMachine {
     let arr=string.toLowerCase().split("");
     let keyl=key.toLowerCase();
     let arr2=[];
-   
+       let count=0;
     for(let i=0;i<arr.length;i++){
   
-    let count=0;
+
       if(!(arr[i].toLowerCase()!==arr[i].toUpperCase()))
         count++;
       else {
