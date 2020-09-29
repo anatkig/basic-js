@@ -11,12 +11,12 @@ class VigenereCipheringMachine {
     let arr2=[];
    
     for(let i=0;i<arr.length;i++){
-     console.log(arr[i]);
+  
     let count=0;
       if(!arr[i].toLowerCase()!==arr[i].toUpperCase())
         count++;
       else {
-      
+         console.log(arr[i]);
       let diff=arr[i].charCodeAt(0)-97;
         let keyc=keyl.charCodeAt((i-count)%lengthnospace);
         
