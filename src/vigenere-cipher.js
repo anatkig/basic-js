@@ -1,6 +1,12 @@
 const CustomError = require("../extensions/custom-error");
 
 class VigenereCipheringMachine {
+  
+  constructor (bul){
+
+this.bul=bul;
+
+}
   encrypt(string,key) {
     if(!string||!key)
     throw new CustomError('trash');
