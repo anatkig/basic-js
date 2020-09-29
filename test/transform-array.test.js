@@ -92,7 +92,7 @@ describe('Transform array', () => {
         it.optional('control sequences work properly', () => {
             for(let i = 0; i < 50; i += 1) {
                 const { input, output } = createSample(i);
-                console.log(input+"     inp",output+"     outp")
+               
                 assert.deepStrictEqual(transform([1,2,3]), [1,2,3]);
             }   
         });
