@@ -21,7 +21,7 @@ class VigenereCipheringMachine {
         let keyc=keyl.charCodeAt((i-count)%keyl.length);
      
         let index=(keyc+diff)<=122?(keyc+diff):((keyc+diff)%122)+96;
-           console.log(index);
+           console.log(string,key);
         let newlet=String.fromCharCode(index);
       arr[i]=newlet;
     
@@ -55,7 +55,7 @@ class VigenereCipheringMachine {
        let middiff=diff-keyc;
        
         let index=(middiff+97)>=97?(middiff+97):(middiff+97)+26;
-           console.log(index);
+           
         let newlet=String.fromCharCode(index);
       arr[i]=newlet;
     
