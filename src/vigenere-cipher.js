@@ -4,12 +4,18 @@ class VigenereCipheringMachine {
   encrypt(string,key) {
     if(!string||!key)
     throw new CustomError('trash');
-    // remove line with error and write your code here
+    
+    let lengthnospace=string.split("").filter(a=>a.toUpperCase()!==a.toLowerCase()).length;
+    let arr=string.split("");
+    return
+   
   }    
   decrypt(string,key) {
     if(!string||!key)
     throw new CustomError('trash');
-    // remove line with error and write your code here
+    
+    let lengthnospace=string.split("").filter(a=>a.toUpperCase()!==a.toLowerCase()).length;
+    let arr=string.split("");
   }
 }
 
