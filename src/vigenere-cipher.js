@@ -8,17 +8,25 @@ class VigenereCipheringMachine {
     let lengthnospace=string.split("").filter(a=>a.toUpperCase()!==a.toLowerCase()).length;
     let arr=string.toLowerCase().split("");
     let keyl=key.toLowerCase();
-    
+    let arr2=[];
     for(let i=0;i<arr.length;i++){
     
     let count trash=0;
       if(!arr[i].toLowerCase()!==arr[i].toUpperCase())
         count++;
-      else 
+      else {
+      
+      let diff=arr[i].charCodeAt(0)-97;
+        let keyc=keyl.charCodeAt((i-count)%lengthnospace);
+        
+        let newlet=String.fromCharCode(keyc+diff);
+      arr[i]=newlet;
+      
+      }
     
     }
     
-    return
+   return arr.join("").toUpperCase();
    
   }    
   decrypt(string,key) {
