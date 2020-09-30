@@ -2,7 +2,7 @@ const CustomError = require("../extensions/custom-error");
 
 module.exports = function getSeason(date) {
  //console.log(date.toString())
-  if(typeof date!=='object'||date==null) 
+  if(typeof date!=='object') 
   throw new Error('trash');
  if(new Date().toString()===date.toString())
   throw new Error('trash');
