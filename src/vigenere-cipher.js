@@ -10,7 +10,7 @@ else this.bul=false;
 }
   encrypt(string,key) {
     if(!string||!key)
-    throw new CustomError('trash');
+    throw new Error('trash');
     
     let arr=[];
    if(this.bul===true)
