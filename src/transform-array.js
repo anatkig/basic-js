@@ -3,7 +3,7 @@ const CustomError = require("../extensions/custom-error");
 module.exports = function transform(arr) {
 
   if(!Array.isArray(arr))
-  throw new CustomError('trash');
+  throw new Error('trash');
   
   const discn="--discard-next";
   const discp="--discard-prev";
