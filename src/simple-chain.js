@@ -30,7 +30,7 @@ const CustomError = require("../extensions/custom-error");
         if(typeof position!=="number"||isNaN(position)||!Number.isInteger(position)||position>this.arval.length||position<1){
               this.arval.splice(0,this.arval.length);
               console.log(this.arval+"arval")
-    throw new CustomError('ditch');
+    throw new CustomError('THROWN');
         }
         else
  this.arval.splice(parseInt(position)-1,1);
